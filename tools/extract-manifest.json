@@ -1,0 +1,170 @@
+﻿[
+    {
+        "file":  "assets\\people\\harris-hao.jpg",
+        "source":  "Portrait of Harris Hao",
+        "bytes":  2590,
+        "dimensions":  "100x100",
+        "sha256":  "37DB0196B909F90D778625698F753BE624C8B7C6610C86E34B6AF7540C4AAE83"
+    },
+    {
+        "file":  "assets\\people\\pedro-halpern-pastor.jpg",
+        "source":  "Portrait of Pedro Halpern Pastor",
+        "bytes":  3132,
+        "dimensions":  "100x100",
+        "sha256":  "87D31F852A7FABF6F2F3017F60BC1156D53009BBCD4F44A3B2DF7CB8EB5EC625"
+    },
+    {
+        "file":  "assets\\people\\mehedi-hasan.jpg",
+        "source":  "Portrait of Mehedi Hasan",
+        "bytes":  3208,
+        "dimensions":  "100x100",
+        "sha256":  "3DCC467F2E47A00254A63FC6B51A1C6A2477E2EF4BB964CD9EA9683394CB2153"
+    },
+    {
+        "file":  "assets\\people\\zhang-junwei.jpg",
+        "source":  "Portrait of Zhang Junwei",
+        "bytes":  3772,
+        "dimensions":  "112x112",
+        "sha256":  "E0B6B26A7D15A4BA135E0114B80EAD25F1CDBFDA84B252C5AB7596EE4B859A93"
+    },
+    {
+        "file":  "assets\\clients\\crrc.png",
+        "source":  "CRRC",
+        "bytes":  12596,
+        "dimensions":  "360x90",
+        "sha256":  "B5FC58711D591E59EC9722CC4ECB23ADB7090F44FD025BD227C14E7C53CC4769"
+    },
+    {
+        "file":  "assets\\clients\\china-state-railway.png",
+        "source":  "China State Railway",
+        "bytes":  29967,
+        "dimensions":  "360x85",
+        "sha256":  "66D9AD0DED7492385CD1B626C4D2502D57DA5A199B7F8BD6DC5311C4BBB4D511"
+    },
+    {
+        "file":  "assets\\clients\\spic.png",
+        "source":  "SPIC",
+        "bytes":  25900,
+        "dimensions":  "360x118",
+        "sha256":  "120EF42CBDB0701031123A5FEA01D2A3FA8A35291BCF5F9E38DDA994B4D9D284"
+    },
+    {
+        "file":  "assets\\clients\\cosco-shipping.png",
+        "source":  "COSCO Shipping",
+        "bytes":  19763,
+        "dimensions":  "185x120",
+        "sha256":  "BAB90AE5176B0DA7CED4EFC46382DCCD5CC7F7A2DB036570DEF06085BB59AF34"
+    },
+    {
+        "file":  "assets\\clients\\crec.png",
+        "source":  "CREC",
+        "bytes":  40709,
+        "dimensions":  "360x109",
+        "sha256":  "508596CB4B8B43EFAF45F5509965238EC4DB1E20E0ABAF6DEB926FDB05172B62"
+    },
+    {
+        "file":  "assets\\clients\\cars.png",
+        "source":  "CARS",
+        "bytes":  17617,
+        "dimensions":  "214x120",
+        "sha256":  "F6465602BF260623BF5E72FAF22C3CD875E0A41A672AA4D1BB6B81B35E8B6A69"
+    },
+    {
+        "file":  "assets\\clients\\chengdu-metro.png",
+        "source":  "Chengdu Metro",
+        "bytes":  12299,
+        "dimensions":  "360x96",
+        "sha256":  "A93A7167AA995488D99027CDC34A4CDB6196D09018CEA0107CEFCBC06424B67F"
+    },
+    {
+        "file":  "assets\\clients\\qingdao-metro.png",
+        "source":  "Qingdao Metro",
+        "bytes":  27553,
+        "dimensions":  "360x108",
+        "sha256":  "79C69D6B70FE47B0ED3CA2D465F8C6D4465D951D937D4004C80989B5FFED5A3F"
+    },
+    {
+        "file":  "assets\\clients\\beijing-subway.png",
+        "source":  "Beijing Subway",
+        "bytes":  9087,
+        "dimensions":  "120x120",
+        "sha256":  "E7506AFA6A7EF3B0372EBFE3B8EFA3166BD04C1BD64A1CBE9810F8D84F991DBD"
+    },
+    {
+        "file":  "assets\\clients\\taiyuan-metro.png",
+        "source":  "Taiyuan Metro",
+        "bytes":  6045,
+        "dimensions":  "121x120",
+        "sha256":  "F6D5EAD29A7C4F76E541EF67D0F3218FCBB4977820A44E50A37F763834A608FB"
+    },
+    {
+        "file":  "assets\\clients\\hohhot-metro.png",
+        "source":  "Hohhot Metro",
+        "bytes":  34246,
+        "dimensions":  "360x72",
+        "sha256":  "BF4714E37A501E3A60B3C620894DD540C0117493C8915C87EF6EE99694C939EB"
+    },
+    {
+        "file":  "assets\\clients\\taiyuan-transport.png",
+        "source":  "Taiyuan Transport",
+        "bytes":  7822,
+        "dimensions":  "213x120",
+        "sha256":  "6C294A67CD3CBEC40908BA54CFF92090DA63E38D9E9F3C6ABE567E2C858B8AED"
+    },
+    {
+        "file":  "assets\\clients\\lanzhou-rail-transit.png",
+        "source":  "Lanzhou Rail Transit",
+        "bytes":  14261,
+        "dimensions":  "121x120",
+        "sha256":  "18E338C5474F29907A1E1D042273CF6717E910CA4AC126B3999BBE2313D80399"
+    },
+    {
+        "file":  "assets\\clients\\china-logistics.png",
+        "source":  "China Logistics",
+        "bytes":  11246,
+        "dimensions":  "115x120",
+        "sha256":  "85C045F7541B13F7213BE264DE1661EF7C6DAA0F6AEFCC4ADCD8AAB2C926F00B"
+    },
+    {
+        "file":  "assets\\clients\\crnet.png",
+        "source":  "CRNet",
+        "bytes":  7454,
+        "dimensions":  "104x120",
+        "sha256":  "854E6D79B05C4F0DD94E707BE8CEAE25197C7B969853F64381E3A4F76E2BEF3C"
+    },
+    {
+        "file":  "assets\\clients\\taiyuan-railway.png",
+        "source":  "Taiyuan Railway",
+        "bytes":  27055,
+        "dimensions":  "213x120",
+        "sha256":  "52CB7D0F754F00740ADE03FE10EDF1F867BF8B04B8ED6318DC9EE6265CCBC1BB"
+    },
+    {
+        "file":  "assets\\clients\\crsc.png",
+        "source":  "CRSC",
+        "bytes":  7600,
+        "dimensions":  "236x76",
+        "sha256":  "38320ED6867717D9336CC1B23B5296690F4D502F10E61B0CF4DA789238036538"
+    },
+    {
+        "file":  "assets\\clients\\rec.png",
+        "source":  "REC",
+        "bytes":  19676,
+        "dimensions":  "140x120",
+        "sha256":  "AF1CA03F7B7778479A771C475EAB3D4B4CD6D58602B37484DA506F4235439CA2"
+    },
+    {
+        "file":  "assets\\clients\\guohang-ocean.png",
+        "source":  "Guohang Ocean",
+        "bytes":  7857,
+        "dimensions":  "120x120",
+        "sha256":  "25907A628E2979590A57886118ACB796397FC4958E45EEA64D97DD254BAAF7C6"
+    },
+    {
+        "file":  "assets\\clients\\jiaotong-university.png",
+        "source":  "Jiaotong University",
+        "bytes":  19072,
+        "dimensions":  "98x120",
+        "sha256":  "BE354B9F01C6F45372F6FA4CD82695D9832DA0D6152886A192D496230A645C77"
+    }
+]

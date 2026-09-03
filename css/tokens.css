@@ -1,0 +1,17 @@
+/* BOM Bridge Group design tokens — values are verbatim from
+   "BOM Bridge Group - Design System.md" §2 (colour) and §3 (type). */
+:root {
+  --navy:#003763; --blue:#0067B1; --blue-mid:#1976B9; --blue-light:#71B7E4;
+  --blue-pale:#B8DBF1; --blue-tint:#EBF3F9;
+  --ink:#58595B; --ink-soft:#75787B; --grey:#AFB2B3; --line:#CFD1D1; --paper:#FFFFFF;
+  --red:#BF4634; --red-line:#F7D2CD; --red-tint:#FDF3F1;
+  --line-on-dark:rgba(255,255,255,0.22);
+  --label-on-dark:rgba(255,255,255,0.72);
+
+  --font-display:Bahnschrift,"Barlow Semi Condensed","DIN Alternate",sans-serif;
+  --font-body:Calibri,Carlito,"Segoe UI",sans-serif;
+  --font-cjk:"Microsoft YaHei","PingFang SC","Noto Sans SC",sans-serif;
+
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px; --s7:96px;
+  --wrap:1280px; --gutter:96px;
+}
