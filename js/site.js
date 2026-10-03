@@ -45,11 +45,11 @@
       e.preventDefault();
       if (!form.reportValidity()) return;
       var v = function (id) { return (document.getElementById(id) || {}).value || ''; };
-      var subject = '48-Hour Benchmark Request — ' + (v('f-company') || v('f-name') || 'New enquiry');
+      var subject = '48-Hour Benchmark Request, ' + (v('f-company') || v('f-name') || 'New enquiry');
       var body = [
         'Name: ' + v('f-name'),
         'Email: ' + v('f-email'),
-        'Company: ' + (v('f-company') || '—'),
+        'Company: ' + (v('f-company') || '-'),
         'Situation: ' + v('f-stage'),
         '',
         v('f-msg') || '(No additional details provided)',

@@ -277,7 +277,9 @@ a:hover { color:var(--navy); text-decoration:underline; }
 .model-step h4 { font-size:20px; line-height:1.2; }
 .model-step p { font-size:16px; color:var(--ink-soft); margin-top:6px; }
 
-.map-frame { border:1px solid var(--blue); padding:24px; background:#FFFFFF; margin:0; }
+.map-frame { border:1px solid var(--blue); padding:24px; background:#FFFFFF; margin:0;
+  /* the frame stretches to the tier column's height, so centre the map inside it */
+  display:flex; align-items:center; }
 .map-frame img { width:100%; height:auto; display:block; }
 
 .tier { padding:var(--s3) 0; }
