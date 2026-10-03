@@ -8,7 +8,7 @@ html { scroll-behavior:smooth; }
 
 body {
   margin:0;
-  background:var(--paper);
+  background:var(--paper) url('../assets/backgrounds/dots-light.svg');
   color:var(--ink);
   font:400 17px/1.5 var(--font-body);
 }
@@ -48,7 +48,8 @@ a:hover { color:var(--navy); text-decoration:underline; }
 .wrap { max-width:var(--wrap); margin:0 auto; padding:0 var(--gutter); }
 
 .section { padding:var(--s7) 0; }
-.section--light { background:var(--paper) url('../assets/backgrounds/dots-light.svg'); }
+/* light sections show the page-wide dots on body, so the pattern runs unbroken from top to bottom */
+.section--light { background:none; }
 .section--dark {
   background:var(--navy) url('../assets/backgrounds/dots-navy.svg');
   color:#FFFFFF;
