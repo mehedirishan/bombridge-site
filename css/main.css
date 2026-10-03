@@ -47,7 +47,9 @@ a:hover { color:var(--navy); text-decoration:underline; }
 
 .wrap { max-width:var(--wrap); margin:0 auto; padding:0 var(--gutter); }
 
-.section { padding:var(--s7) 0; }
+.section { padding:var(--s5) 0; }
+/* the closing rule is the section's last element; no extra space below it, so every gap is the same 96px */
+.wrap > .rule:last-child { margin-bottom:0; }
 /* light sections show the page-wide dots on body, so the pattern runs unbroken from top to bottom */
 .section--light { background:none; }
 .section--dark {
@@ -64,7 +66,7 @@ a:hover { color:var(--navy); text-decoration:underline; }
 
 .rule { border:0; border-top:1px solid var(--line); margin:var(--s4) 0; flex:none; }
 
-.footnote { font-size:14px; line-height:1.4; color:var(--ink-soft); margin:0; }
+.footnote { font-size:14px; line-height:1.4; color:var(--ink-soft); margin:var(--s3) 0 0; }
 
 /* ---------- Header ---------- */
 
@@ -222,7 +224,7 @@ a:hover { color:var(--navy); text-decoration:underline; }
 
 /* ---------- Hero ---------- */
 
-.hero { padding:var(--s7) 0; }
+.hero { padding:var(--s6) 0 var(--s5); }
 .hero-grid {
   display:grid; grid-template-columns:1.1fr 0.9fr;
   gap:var(--s6); align-items:center;
@@ -385,7 +387,8 @@ a:hover { color:var(--navy); text-decoration:underline; }
   :root { --gutter:24px; }
   .hero-title { font-size:40px; }
   h2 { font-size:24px; }
-  .section { padding:var(--s6) 0; }
+  .section { padding:40px 0; }
+  .hero { padding:40px 0 32px; }
   .clients-grid { grid-template-columns:repeat(2, minmax(0,1fr)); }
   .chip-row--5 { grid-template-columns:repeat(2, minmax(0,1fr)); }
   .stamp { width:168px; height:168px; }
