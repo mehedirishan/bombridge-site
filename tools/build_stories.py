@@ -14,19 +14,20 @@ PUBLISHED = "2026-10-20"
 
 STORIES = [
     {
-        "slug": "genicalc",
-        "client": "GeniCalc",
-        "menu": "GeniCalc, AI calculator",
-        "client_url": "https://www.genicalc.com/",
-        "product": "AI scientific calculator",
+        "slug": "ai-education-device",
+        "client": "European startup",
+        "short": "AI education device",
+        "menu": "AI education device",
+        "client_url": None,
+        "product": "AI education device",
         "where": "China",
         "title": "From a troubled prototype to the right manufacturing partner",
         "sub": "A European founder, a failed first supplier, and a product that is now better and cheaper than its rivals.",
-        "description": "How BOM Bridge Group helped GeniCalc repair a faulty prototype of its AI scientific calculator, "
+        "description": "How BOM Bridge Group helped a European startup repair a faulty prototype of its AI education device, "
                        "find a partner to redevelop and manufacture it in China, and cut the unit cost from €70 to €40.",
         "services": "Prototype assessment · Manufacturer sourcing · Factory visits in China · Negotiation",
         "body": [
-            "GeniCalc, a Cyprus-based startup building an AI scientific calculator for students, came to us with what "
+            "A European startup building an AI education device came to us with what "
             "looked like a simple brief, find a factory in China able to reproduce a prototype they had already "
             "developed with other suppliers. The prototype did not work properly though, so before recommending anyone "
             "we had it sent over and spent almost a week with technicians diagnosing and repairing it.",
@@ -37,9 +38,9 @@ STORIES = [
             "electronics manufacturers, got quotes from more than ten factories, visited eight and shortlisted four for "
             "him to meet in China.",
             "We organised the factory visits and supported the negotiations on the ground in Mandarin, and after three "
-            "rounds GeniCalc chose a partner for both redevelopment and manufacturing. The new professional design cost "
+            "rounds the startup chose a partner for both redevelopment and manufacturing. The new professional design cost "
             "around €12k, barely more than the failed one, and brought the unit cost down from €70 to €40, 43% less, "
-            "for a calculator that is now better and cheaper than the AI education devices already on the market.",
+            "for a device that is now better and cheaper than the other AI education devices already on the market.",
         ],
         "stats": [
             ("−43% unit cost", "From €70 to €40 per unit"),
@@ -50,7 +51,7 @@ STORIES = [
         ],
         "person": {
             "name": "Amaury Clerens",
-            "role": "Co-founder, GeniCalc",
+            "role": "European co-founder",
             "photo": "assets/people/amaury-clerens.jpg",
             "linkedin": "https://www.linkedin.com/in/amaury-clerens-979ba7146/",
         },
@@ -256,8 +257,9 @@ def build_story(s):
         "@context": "https://schema.org", "@type": "Article", "headline": s["title"], "description": s["description"],
         "datePublished": PUBLISHED, "dateModified": PUBLISHED, "author": org(), "publisher": org(),
         "mainEntityOfPage": url, "image": f"{SITE}/assets/og/og-image.png",
-        "about": {"@type": "Organization", "name": s["client"], "url": s["client_url"]},
     }
+    if s["client_url"]:
+        article["about"] = {"@type": "Organization", "name": s["client"], "url": s["client_url"]}
     if s["person"]:
         p = s["person"]
         article["mentions"] = {"@type": "Person", "name": p["name"], "jobTitle": p["role"], "sameAs": p["linkedin"],
@@ -265,7 +267,7 @@ def build_story(s):
     crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
         {"@type": "ListItem", "position": 2, "name": "Success stories", "item": f"{SITE}/success-stories/"},
-        {"@type": "ListItem", "position": 3, "name": s["client"], "item": url}]}
+        {"@type": "ListItem", "position": 3, "name": s.get("short", s["client"]), "item": url}]}
 
     paras = []
     figs = {after: (f, cap) for f, cap, after in s["figures"]}
@@ -287,7 +289,7 @@ def build_story(s):
       <div>
         <h3>{E(p['name'])}</h3>
         <p class="role">{E(p['role'])}</p>
-        <p class="cv"><a href="{p['linkedin']}" rel="noopener" target="_blank">LinkedIn</a> · <a href="{s['client_url']}" rel="noopener" target="_blank">{E(s['client_url'].split('//')[1].strip('/'))}</a></p>
+        <p class="cv"><a href="{p['linkedin']}" rel="noopener" target="_blank">LinkedIn</a></p>
       </div>
     </div>"""
     quote = ""
@@ -303,15 +305,17 @@ def build_story(s):
       </blockquote>
     </div>"""
     footnote = f'\n    <p class="footnote">{E(s["footnote"])}</p>' if s["footnote"] else ""
-    client_link = f'<a href="{s["client_url"]}" rel="noopener" target="_blank">{E(s["client"])}</a>'
+    client_link = (f'<a href="{s["client_url"]}" rel="noopener" target="_blank">{E(s["client"])}</a>'
+                   if s["client_url"] else E(s["client"]))
+    short = s.get("short", s["client"])
 
-    page = head(f"{s['title']} | {s['client']} | BOM Bridge Group", s["description"], url, depth, [article, crumbs])
+    page = head(f"{s['title']} | {short} | BOM Bridge Group", s["description"], url, depth, [article, crumbs])
     page += header(depth)
     page += f"""
 <main id="top">
 <article class="section">
   <div class="wrap">
-    <p class="eyebrow crumbs"><a href="{root}success-stories/">Success stories</a> / {E(s['client'])}</p>
+    <p class="eyebrow crumbs"><a href="{root}success-stories/">Success stories</a> / {E(short)}</p>
     <h1>{E(s['title'])}</h1>
     <p class="section-sub">{E(s['sub'])}</p>
     <ul class="story-meta">
@@ -361,7 +365,7 @@ def build_index():
   <div class="wrap">
     <p class="eyebrow">Success Stories</p>
     <h1>Hardware we have helped make in China</h1>
-    <p class="section-sub">An AI calculator rebuilt from a troubled prototype, and a smartphone sourced across Guangdong in four days.</p>
+    <p class="section-sub">An AI education device rebuilt from a troubled prototype, and a smartphone sourced across Guangdong in four days.</p>
     <hr class="rule">
     <div class="story-cards">
 {cards}
