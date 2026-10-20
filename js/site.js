@@ -26,6 +26,23 @@
     });
   }
 
+  // Header dropdowns: open on click, close on outside click, Escape or picking an item
+  document.querySelectorAll('.nav-dd').forEach(function (dd) {
+    var btn = dd.querySelector('.nav-dd-toggle');
+    var panel = btn && document.getElementById(btn.getAttribute('aria-controls'));
+    if (!panel) return;
+    var set = function (open) {
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      panel.hidden = !open;
+    };
+    btn.addEventListener('click', function () { set(panel.hidden); });
+    document.addEventListener('click', function (e) { if (!dd.contains(e.target)) set(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !panel.hidden) { set(false); btn.focus(); }
+    });
+    panel.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  });
+
   // Problem card accordions
   document.querySelectorAll('.prob-toggle').forEach(function (btn) {
     btn.addEventListener('click', function () {
